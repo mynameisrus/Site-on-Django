@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,maximumscale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+    </head>
+    <body>
+        <a href="{% url 'main:index' %}">Главная</a>
+
+        {% block content %}{% endblock %}
+    </body>
+</html>
